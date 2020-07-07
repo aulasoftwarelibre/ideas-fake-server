@@ -1,0 +1,18 @@
+{
+  "name": "ideas-fake-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/aulasoftwarelibre/ideas-fake-backend.git",
+  "author": "Aula de Software Libre de la Universidad de Córdoba <aulasoftwarelibre@uco.es>",
+  "license": "AGPL-3.0-or-later",
+  "devDependencies": {
+    "@types/json-server": "^0.14.2",
+    "faker": "^4.1.0",
+    "json-server": "^0.16.1",
+    "moment": "^2.24.0",
+    "uuid": "^7.0.3"
+  },
+  "scripts": {
+    "server": "json-server --watch api/db.js --routes api/routes.json --port 4000 --host 0.0.0.0"
+  }
+}
